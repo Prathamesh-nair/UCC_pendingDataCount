@@ -4,7 +4,7 @@ const axios = require("axios").default;
 const postError = async function (task = "", msg = "") {
   axios({
     method: "post",
-    url: process.env.TECHOPSALERT,
+    url: process.env.ALERTINGCHANNEL,
     data: {
       text: `${task}\n>${msg}`,
     },

@@ -36,7 +36,7 @@ async function getReport() {
         }
       }
       postError(
-        `<@prathamesh.nair> <@prateek.gupta>\nPlease find the count for UCC pending\nExchange\t\tStatus\t\tCount\n${slackMessage}\nPlease find the pending Count for VSP: ${vspCount}\ncc <@sapna.ahuja>`
+        `<@kyc_oncall> <@U02B99SLTTL> <@ankush.kochar>\n\nPlease find the count for UCC pending\nExchange\t\tStatus\t\tCount\n${slackMessage}\nPlease find the pending Count for VSP: ${vspCount}\ncc: <@U02B6B1HGER> <@U02JM7TGY2Y> <@nitin.kumar> <@sapna.ahuja> <@prathamesh.nair>`
       );
     }
   }
