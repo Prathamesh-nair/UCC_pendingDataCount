@@ -1,6 +1,6 @@
 let query_NSEBSE_Count = `select exchange, status, count(*) from segment
     join user_id on segment.app_number = user_id.app_number
-where exchange in ('bse', 'nse')
+where exchange in ('bse', 'nse') and user_id.create_ts >= '2023-01-01'
 group by exchange, status;`;
 
 let quert_VSPCount = `select Count(a.app_number)
